@@ -130,9 +130,10 @@ h3 {
     gap: 2em;
     
     } 
-figure{
+figure {
     display:flex;
-    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
 }
 p {
 
@@ -149,8 +150,16 @@ footer {
     grid-column: 3fr 3fr;
     background-color: #3e3e3e;
     color: #fff;
-}
-
-sociallinks img {
-    width: 65px;
-}
+    
+    .sociallinks img {
+        width: 65px;
+    }
+     
+    .sociallinks {
+        display: flex;
+        justify-content: end;
+    }
+       
+    .sociallinks a:hover {
+        background-color: unset;
+    }
