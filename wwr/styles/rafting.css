@@ -4,11 +4,64 @@
     --background-color: #283618;
     --text-color: #606C38;
 }
-header,main,footer{
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+main,
+footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-.hero{
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+    margin: 1rem;
+    width: 5%;
+    height: auto;
+    place-items: left;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+
+nav {
+    background-color:#3e3e3e;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 1em;
+    color: var(--background-color);
+}
+
+nav a:hover {
+    background-color: var(--background-color);
+    color: #fff;
+}
+
+
+.hero {
     position: relative;
 }
 
@@ -17,34 +70,41 @@ header,main,footer{
     width: 100%;
     height: auto;
 }
-.hero h1{
+
+.hero h1 {
     position: absolute;
-    top:2em;
+    top: 2em;
     left: 0;
     right: 0;
     background-color: var(--primary-color);
     text-align: center;
-    
+
 }
-.hero article{
+
+.hero article {
     position: absolute;
     top: 15em;
     width: 80%;
     background-color: #FEFAE088;
-text-align: center;
+    text-align: center;
     left: 10%;
 }
-.hero article img{
+
+.hero article img {
     width: 200px;
     float: right;
     padding: 1rem;
 
 }
+
 h2 {
     color: var(--secondary-color);
-    font-size: 2em;
-    margin-bottom: 0.5em;
+    font-size: 2rem;
+    margin-bottom: 1%;
+    text-align: center;
+
 }
+
 
 h3 {
     color: var(--text-color);
@@ -52,26 +112,41 @@ h3 {
     margin-bottom: 0.5em;
 }
 
+#figcaption {
+  
+  background-color:#DDA15E;
+  color:#fff;
+  font:bolder;
+  padding: 3px;
+  text-align: center;
+  list-style: none;
+  display: grid;
+  justify-content: space-around;
+}
+
+#adventure {
+    display: grid;
+    grid-column: 5fr 5fr;
+    flex-direction: column;
+    } 
 
 p {
-    
+
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 1em;
+    text-align: wrap;
+    grid-template-columns: 33% 33% 33%;
 }
 
 
-a img {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: underline;
-}
-footer{
+footer {
+    display: grid;
+    grid-column: 3fr 3fr;
     background-color: #3e3e3e;
     color: #fff;
 }
-.sociallinks img{
+
+sociallinks img {
     width: 65px;
 }
