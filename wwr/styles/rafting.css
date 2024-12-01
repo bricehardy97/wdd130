@@ -5,6 +5,14 @@
     --text-color: #606C38;
 }
 
+body {
+    font-family:  Abril Fat Face
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins
+}
+
 *,
 *::before,
 *::after {
@@ -52,7 +60,7 @@ nav {
 
 nav a {
     padding: 1em;
-    color: var(--background-color);
+    color: var(--primary-color);
 }
 
 nav a:hover {
@@ -123,12 +131,13 @@ h3 {
 }
 
 figcaption {
-  
-  background-color:#DDA15E;
-  color:#fff;
-  font:700;
+  color: var(--background-color)
+  font-weight: 700;
   padding: 0.5rem;
   
+}
+figure img {
+    width: 100%;
 }
 
 .adventure {
@@ -159,6 +168,7 @@ p {
         color: #fff;
         padding: 1em;
         margin-top: 100px;
+        align-items:center;
     }
      
     .sociallinks {
