@@ -97,7 +97,7 @@ nav a:hover {
 
 }
 
-h2 {
+#history {
     color: var(--secondary-color);
     font-size: 2rem;
     margin-bottom: 1%;
@@ -126,10 +126,14 @@ h3 {
 
 #adventure {
     display: grid;
-    grid-column: 5fr 5fr;
-    flex-direction: column;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2em;
+    
     } 
-
+figure{
+    display:flex;
+    flex-direction: column;
+}
 p {
 
     font-size: 1em;
