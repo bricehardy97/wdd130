@@ -144,6 +144,7 @@ figure {
     display:flex;
     flex-direction: center;
     align-items: center;
+    margin: 0;
 }
 p {
 
