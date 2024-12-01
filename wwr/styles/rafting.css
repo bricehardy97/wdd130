@@ -122,16 +122,13 @@ h3 {
     margin-bottom: 0.5em;
 }
 
-#figcaption {
+figcaption {
   
   background-color:#DDA15E;
   color:#fff;
-  font:bolder;
-  padding: 3px;
-  text-align: center;
-  list-style: none;
-  display: grid;
-  justify-content: space-around;
+  font:700;
+  padding: 0.5rem;
+  
 }
 
 #adventure {
