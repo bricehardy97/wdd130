@@ -180,3 +180,57 @@ footer {
 .sociallinks a:hover {
     background-color: unset;
     }
+
+.contactheader {
+
+    text-align: center;
+    justify-self: center;
+    padding: 1em 0;
+    
+}
+.where{
+    display: inline-block;
+        grid-template-rows: 2fr 1fr 2fr;
+        gap: 2em;
+        margin: 50px 0;
+        width: 280px;
+        height: 78px;
+        color: #3B4754;
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+.info{
+    display: inline-block;
+    grid-template-rows: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+        width: 164px;
+        height: 120px;
+        color: #798DA3;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .map{
+        display: inline-block;
+        grid-template-rows: 0fr 0fr 3fr;
+        gap: 2em;
+        margin: 50px 0;
+            width: 492px;
+            height: 449px;
+            background: #EDF0F4;
+        }
+    .meetourteamheader{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+   
